@@ -1,155 +1,135 @@
-
 <!DOCTYPE html>
 <html>
-<head> 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122333630-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122333630-1');
-</script>
 <title>Camille Cobb</title>
-</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
 </style>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar (sit on top) -->
 <div class="w3-top">
-<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
-  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-  </li>
-  <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">CAMILLE COBB</a></li>
-  <li class="w3-hide-small"><a href="#publications" class="w3-padding-large">PUBLICATIONS</a></li>
-  <li class="w3-hide-small"><a href="#contact" class="w3-padding-large">CONTACT</a></li>
-  <li class="w3-hide-small"><a href="https://camicobb.wordpress.com/" target="_blank" class="w3-padding-large">BLOG</a></li>
-
-</div>  
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <ul class="w3-navbar w3-left-align w3-black">
-    <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">CAMILLE COBB</a></li>
-    <li><a class="w3-padding-large" href="#publications">PUBLICATIONS</a></li>
-    <li><a class="w3-padding-large" href="#contact">CONTACT</a></li>
-    <li><a class="w3-padding-large" target="_blank" href="https://camicobb.wordpress.com/">BLOG</a></li>
-
-  </ul>
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#publications" class="w3-bar-item w3-button">Publications</a>
+      <a href="#news" class="w3-bar-item w3-button">News</a>
+      <a href="#advising" class="w3-bar-item w3-button">Advising</a>
+    </div>
+  </div>
 </div>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div class="w3-content" style="max-width:1100px">
 
-  <!-- The About Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">ABOUT</h2>
-    <p class="w3-opacity"><i>I am a graduate student at the <a href="http://www.washington.edu/" target="_blank">University of Washington</a> in <a href="http://www.cs.washington.edu" target="_blank">Computer Science &amp; Engineering</a>.</i></p>
-    <p class="w3-opacity"><i>I work with <a href="http://homes.cs.washington.edu/~yoshi/" target="_blank">Tadayoshi Kohno</a> in the <a href="http://seclab.cs.washington.edu/" target="_blank">Security &amp; Privacy Research Lab</a>. I'm broadly interested in security and privacy, but I am particularly drawn to projects that seek to understand users' security and privacy expectations and how those expectations may be violated even when systems work as anticipated (e.g., are not compromised by malicious actors).</i></p>
-    <p class="w3-opacity"><i>More information about my relevant skills and experiences is available in my <a href="cobb_cv.pdf" target="_blank">CV</a>.</i></p>
-    <p class="w3-opacity"><i>Some of my non-research interests include: hanging out with my <a href="https://www.instagram.com/p/BgRah4DlbNb/?taken-by=cam_and_stormy" target="_blank">awesome dog</a>; social dancing (I've also taken a bunch of classes in the dance department); playing soccer/softball; occasionally going to watch the <a href="https://www.instagram.com/p/BVv9LUdlBq4/?taken-by=cam_and_stormy" target="_blank">Storm</a>, Mariners, <a href="https://www.instagram.com/p/BYCCUijHKRx/?taken-by=cam_and_stormy" target="_blank">Rainiers</a>, Sounders, (etc.); <a href="https://www.instagram.com/p/Baicbnhnyz-/?taken-by=cam_and_stormy" target="_blank">knitting</a> and other artistic endeavors; and photoshopping silly pictures of friends. A while back, I made a <a href="https://www.instagram.com/p/BRHml-WFmwg/?taken-by=cam_and_stormy" target="_blank">drawing machine</a>. I have plans to eventually rebuild it but better. </i></p>
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="camille_1.jpg" class="w3-round w3-image" alt="Camille and Stormy on Hurricane Ridge" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class ="w3-center">Camille Cobb</h1>
+      <h5 class="w3-center">Research</h5>
+      <p class="w3-large w3-opacity">I am a PhD candidate at the <a href="http://www.washington.edu/" target="_blank">University of Washington</a> in <a href="http://www.cs.washington.edu" target="_blank">Computer Science &amp; Engineering</a>.</p>
+      <p class="w3-large w3-opacity">I work with <a href="http://homes.cs.washington.edu/~yoshi/" target="_blank">Tadayoshi Kohno</a> in the <a href="http://seclab.cs.washington.edu/" target="_blank">Security &amp; Privacy Research Lab</a>. I'm broadly interested in security and privacy, but I am particularly drawn to projects that seek to understand users' security and privacy expectations and how those expectations may be violated even when systems work as anticipated (e.g., are not compromised by malicious actors).</p>
+      <h5 class="w3-center">Other Interests</h5>
+      <p class="w3-large w3-opacity">Some of my non-research interests include: hanging out with my <a href="https://www.instagram.com/p/BgRah4DlbNb/?taken-by=cam_and_stormy" target="_blank">awesome dog</a>; social dancing; playing soccer and softball; going to <a href="https://www.instagram.com/p/BVv9LUdlBq4/?taken-by=cam_and_stormy" target="_blank">Storm</a>, Mariners, <a href="https://www.instagram.com/p/BYCCUijHKRx/?taken-by=cam_and_stormy" target="_blank">Rainiers</a>, Sounders, (etc.) games; <a href="https://www.instagram.com/p/Baicbnhnyz-/?taken-by=cam_and_stormy" target="_blank">knitting</a> and other <a href="https://www.instagram.com/p/BRHml-WFmwg/?taken-by=cam_and_stormy" target="_blank">artistic endeavors</a>.</p>
+      <h5 class="w3-center">Contact</h5>
+      <p class="w3-large w3-opacity">I'm happy to talk with anyone who is interested in learning more about my research or discussing a collaboration.</p>
+      <p class="w3-opacity">
+      <i class="fa fa-envelope" style="width:30px "> </i> Email: <a href="mailto:cobbc12@cs.washington.edu">cobbc12@cs.washington.edu</a><br>
+      <i class="fa fa-github" style="width:30px"> </i> Github: <a href="http://github.com/cobbc12" target="_blank">cobbc12</a><br>
+      <i class="fa fa-instagram" style="width:30px"> </i> Instagram: <a href="http://instagram.com/cam_and_stormy/" target="_blank">cam_and_stormy</a><br>
+      <i class="fa fa-twitter" style="width:30px"> </i> Twitter: <a href="https://twitter.com/camPossible" target="_blank">@campossible</a><br>
+      <i class="fa fa-wordpress" style="width:30px"> </i> Wordpress (blog): <a href="https://camicobb.wordpress.com/" target="_blank">Camille Cobb</a><br>
+      </p>
+
+    </div>
   </div>
   
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="camille_1.jpg" style="width:100%">
-  </div>
-
+  <hr>
 
 
 
   <!-- The Publications Section -->
-  <div class="w3-black" id="publications">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">RECENT PUBLICATIONS</h2>
+  <div class="w3-row w3-padding-64" id="publications">
+    <h1 class="w3-center">Recent Publications</h1>
 
-       <p class="w3-opacity w3-center"> <i>Camille Cobb</i>, Tadayoshi Kohno. How Public Is My Private Life? Privacy in Online Dating. WWW 2017, Perth, Australia, April 2017. <a href="http://homes.cs.washington.edu/~cobbc12/publications/WWW2017_OnlineDating.pdf" target="_blank">pdf</a>, <a href="http://homes.cs.washington.edu/~cobbc12/publications/HowPublicIsMyPrivateLife_SurveyInstrument.pdf" target="_blank">survey instrument</a>, <a href="http://homes.cs.washington.edu/~cobbc12/publications/cobb_kohno_www2017_presentationSlides.pdf" target="_blank">presentation slides</a> </p>
+    <p class="w3-large w3-opacity w3-center"> <i>Camille Cobb</i>, Tadayoshi Kohno. How Public Is My Private Life? Privacy in Online Dating. WWW 2017, Perth, Australia, April 2017. <a href="http://homes.cs.washington.edu/~cobbc12/publications/WWW2017_OnlineDating.pdf" target="_blank">pdf</a>, <a href="http://homes.cs.washington.edu/~cobbc12/publications/HowPublicIsMyPrivateLife_SurveyInstrument.pdf" target="_blank">survey instrument</a>, <a href="http://homes.cs.washington.edu/~cobbc12/publications/cobb_kohno_www2017_presentationSlides.pdf" target="_blank">presentation slides</a> </p>
       
-       <p class="w3-opacity w3-center"> <i>Camille Cobb</i>, Samuel Sudar, Nicholas Reiter, Richard Anderson, Franziska Roesner, Tadayoshi Kohno. Computer Security for Data Collection Technologies. ICTD 2016, Ann Arbor, MI, June 2016. <a href="http://homes.cs.washington.edu/~cobbc12/publications/ICTD2016_SecurityForDataCollection.pdf" target="_blank">pdf</a> </p>
+    <p class="w3-large w3-opacity w3-center"> <i>Camille Cobb</i>, Samuel Sudar, Nicholas Reiter, Richard Anderson, Franziska Roesner, Tadayoshi Kohno. Computer Security for Data Collection Technologies. ICTD 2016, Ann Arbor, MI, June 2016. <a href="http://homes.cs.washington.edu/~cobbc12/publications/ICTD2016_SecurityForDataCollection.pdf" target="_blank">pdf</a> </p>
       
-      <p class="w3-opacity w3-center"> <i>Camille Cobb</i>, Ted McCarthy, Annuska Perkins, Ankitha Bharadwaj, Jared Comis, Brian Do, Kate Starbird. Designing for the deluge: understanding &amp; supporting the distributed, collaborative work of crisis volunteers. CSCW 2014, Baltimore, MD, February 2014. <a href="http://homes.cs.washington.edu/~cobbc12/publications/CSCW2014_DesigningForTheDeluge.pdf" target="_blank">pdf</a> </p>
+    <p class="w3-large w3-opacity w3-center"> <i>Camille Cobb</i>, Ted McCarthy, Annuska Perkins, Ankitha Bharadwaj, Jared Comis, Brian Do, Kate Starbird. Designing for the deluge: understanding &amp; supporting the distributed, collaborative work of crisis volunteers. CSCW 2014, Baltimore, MD, February 2014. <a href="http://homes.cs.washington.edu/~cobbc12/publications/CSCW2014_DesigningForTheDeluge.pdf" target="_blank">pdf</a> </p>
       
       
-      <p class="w3-opacity w3-center"><i>Full list of publications on <a href="http://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F50IbTUR2AxWTPfH81Lo8UyfsoegjkN3youQulQ6wi8-0QdwReOSKE7h2Bk-CJucgRystRpIFLtg0psOGHK8lhGUc3hgA&user=-agI8uoAAAAJ" target="_blank">Google Scholar</a>.</i> </p><br>
+    <p class="w3-large w3-opacity w3-center"><i>Full list of publications on <a href="http://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F50IbTUR2AxWTPfH81Lo8UyfsoegjkN3youQulQ6wi8-0QdwReOSKE7h2Bk-CJucgRystRpIFLtg0psOGHK8lhGUc3hgA&user=-agI8uoAAAAJ" target="_blank">Google Scholar</a>.</i> </p><br>
 
-      </div>
-    </div> 
+  </div>
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:cobbc12@cs.washington.edu">cobbc12@cs.washington.edu</a><br>
-	
-	<i class="fa fa-github" style="width:30px"> </i> Github: <a href="http://github.com/cobbc12" target="_blank">cobbc12</a><br> 
-	 
-	<i class="fa fa-instagram" style="width:30px"> </i>   Instagram: <a href="http://instagram.com/cam_and_stormy/" target="_blank">cam_and_stormy</a><br>
-	
-	<i class="fa fa-wordpress" style="width:30px"> </i>   Wordpress (blog): <a href="https://camicobb.wordpress.com/" target="_blank">Camille Cobb</a><br>
+  <hr>
 
+  <!-- News Section -->
+  <div class="w3-row w3-padding-64" id="publications">
+    <h1 class="w3-center">News</h1>
+    <p class="w3-large w3-opacity">My research has been discussed in several articles (if you hear of others, please let me know):</p>
+    <ul class="w3-opacity">
+      <li><a href="https://gizmodo.com/the-future-of-online-dating-is-unsexy-and-brutally-effe-1819781116">Gizmodo</a></li>
+      <li><a href="http://grad.uw.edu/student-alumni-profiles/how-to-maintain-privacy-while-online-dating/">UW Grad Student Profile</a></li>
+      <li><a href="http://techpolicylab.org/privacy-in-online-dating/">Tech Policy Lab</a></li>
+    </ul>
+  </div>
 
-
-      </div>
+  <hr>
+  
+  <!-- Advising Section -->
+  <div class="w3-row w3-padding-64">
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Advising</h1>
+      <p class="w3-large w3-opacity">Motivated undergrads who are would like to learn more about getting involved in research should send me an email.</p>
+      <p class="w3-large w3-opacity">I've worked with many excellent undergrad and masters students at UW. Most recently, I have worked with students in CSE:</p>
+      <ul class="w3-opacity">
+	<li>Clemend Zhong</li>
+	<li>Kayla Butler</li>
+	<li>Nicholas Reiter</li>
+      </ul>
+      <p class="w3-large w3-opacity">Early in my PhD, I led an HCDE Directed Research Group with students rotating in and out of the team over several quarters:</p>
+      <ul class = "w3-opacity"> 
+	<li>Aiko Lin</li>
+	<li>Ankitha Bharadwaj</li>
+	<li>Brian Do</li>
+	<li>Eng Phannipha</li>
+	<li>Janelle Van Hofwegen</li>
+	<li>Jared Comis</li>
+	<li>Joe Kohlmann</li>
+	<li>Katlyn Edwards</li>
+	<li>Tridiv Sardesai</li>
+      </ul>
+      <p class="w3-large w3-opacity">I have also mentored high school students in computer science competitions (see my <a href="cobb_cv.pdf" target="_blank">CV</a> for more info).
     </div>
-	
-	  
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="stormy_flowers.jpg" class="w3-round w3-image" alt="My dog Stormy in a field of flowers" width="600" height="750">
+    </div>
   </div>
   
-<!-- End Page Content -->
+  <hr>
+  
+<!-- End page content -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-small">
-  <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  <p>Updated: June 2018</p>
+<footer class="w3-center w3-opacity w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Updated July 2018</p>
 </footer>
-
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 
 </body>
 </html>
